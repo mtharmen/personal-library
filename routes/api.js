@@ -12,7 +12,6 @@ var expect = require('chai').expect;
 var mongoose = require('mongoose')
 var objectId = mongoose.Types.ObjectId
 
-// Not setting default on created so that updated is in sync
 var bookSchema = new mongoose.Schema({
   title: String,
   comments: { type: [String], default: [] }
